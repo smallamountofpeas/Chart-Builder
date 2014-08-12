@@ -1,0 +1,205 @@
+
+/* Normalize and set default font family */
+html body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+/* header */
+#header {
+  background-color: black;
+  border-bottom: 2px solid #A5D725;
+  /*height: 100px;*/
+  overflow: hidden;
+}
+
+
+
+
+#header-info {
+  float: left;
+  margin: 0 0 0 30px;
+}
+
+
+
+
+#title {
+  color: #F3F3F3; 
+  font-size: 1em;
+}
+
+
+
+
+#blurb {
+  color: #9D9D9D;
+  font-size: .5em;
+}
+
+
+
+
+#android {
+  float: right;
+  padding: 10px;
+}
+
+
+
+
+#android img{
+  height: 80px;
+}
+
+
+
+
+/* main area */
+#wrapper {
+  background-color: #000000;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+#gradient {
+  height: 60px;
+  background: -webkit-linear-gradient(#424242, #000000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#424242, #000000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#424242, #000000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#424242, #000000); /* Standard syntax */    
+}
+
+
+
+
+.main-titles {
+  color: #FFFFFF; 
+  font-size: 1em;
+  margin-bottom: 10px;
+  /*background-color: yellow;*/
+}
+
+
+
+
+#dataTitle {
+    margin-left: 40px;    
+}
+
+
+
+
+/* Chart */
+#chart {
+  color: #FFFFFF; 
+  float: left;
+  position: relative;
+  top: -70px;
+  margin-left: 30px;
+  margin-right: 30px;
+  
+  /*background-color: gray;*/
+}
+
+
+
+
+#myChart {
+ border: 1px solid #9D9D9D;
+ margin-top: 15px;
+}
+
+
+
+
+.axis {
+  color: #9D9D9D;
+}
+
+
+
+
+#xAxis {
+    text-align: center;
+    margin-top: -15px;
+    /*background-color: blue;*/
+}
+
+
+
+
+#yAxis {
+    position: absolute;
+    top: 240px;
+    left: -45px;
+    /*background-color: green;*/
+
+
+  -ms-transform:rotate(270deg); /* IE 9 */
+  -ms-transform-origin:0% 0%; /* IE 9 */
+  -moz-transform:rotate(270deg); /* Firefox */
+  -moz-transform-origin:0% 0%; /* Firefox */
+  -webkit-transform:rotate(270deg); /* Safari and Chrome */
+  -webkit-transform-origin:0% 0%; /* Chrome, Safari */
+  -o-transform:rotate(270deg); /* Opera */
+  -o-transform-origin:0% 0%; /* Opera */
+  transform: rotate(270deg);
+  transform-origin:0% 0%;
+   
+}
+
+
+
+
+
+
+/* data */
+#data {
+  color: #9D9D9D;
+  float: left;
+  position: relative;
+  top: -70px;
+  /*background-color: gray;*/
+}
+
+
+.data-type {
+  display: inline;
+  font-size: .5em;
+  margin-left: 40px;
+  margin-right: -35px;
+}
+
+
+.hours, .rating {
+    display: inline-block;
+    width: 56px; 
+}
+
+
+.night-inputs {
+    margin: 0;  
+}
+
+
+.night {
+  display: inline-block;
+  width: 36px;
+  font-size: .5em;
+  /*background-color: blue;*/
+}
+
+
+
+
+
+
