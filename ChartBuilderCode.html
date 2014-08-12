@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Test Sleep Rating Chart Builder</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <script type="text/javascript" src="script.js"></script>
+        </head>
+        <body>
+        <!--Add your own HTML!-->
+        <div id="header">
+          <div id="header-info">
+            <div id="title">
+              <h2>Sleep Rating Chart Builder</h2>
+            </div>
+            <div id="blurb">
+              <p>Plot your ratings for up to 14 nights of sleep from your Sleep as Android app.</p>
+            </div>
+          </div>
+          <div id="android">
+            <a href="https://sites.google.com/site/sleepasandroid/home">
+              <img src="https://lh3.ggpht.com/pfI27ViPbkPh-GlrxuHZy1Fi3SN7Hgoo43w4QXTS2JxQ0AxZwNboZowDSI-sCQUQWA=w300">
+            </a>
+          </div>
+        </div>  
+        <div id="wrapper">
+          <div id="gradient">
+          </div>
+          <div id="chart">
+            <h4 class="main-titles">Plot Chart</h4>
+            
+            <canvas id="myChart" width="320" height="320">
+            Sorry!  Your browser does not support the chart graphics.
+            </canvas>
+            
+            <div class="axis" id="yAxis">
+                <h6>Rating (0-5)</h6>
+            </div>
+            
+            <div class="axis" id="xAxis">
+                <h6>Hours (0-12)</h6>
+            </div>
+            
+            <input id="plot" type="button" value="Plot Chart">
+            <input id="clear" type="button" value="Clear Chart">
+          </div>
+          <div id="data">
+            <h4 class="main-titles" id="dataTitle">Data Input</h4>
+            <p class="data-type">Hours Sleep</p>
+            <p class="data-type">Rating</p>
+            <br>
+            <form id="myInputs">
+                <p class="night-inputs">
+                    <label class="night">Night 1</label>
+                    <input class="hours" name="hours1" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating1" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 2</label>
+                    <input class="hours" name="hours2" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating2" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 3</label>
+                    <input class="hours" name="hours3" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating4" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 4</label>
+                    <input class="hours" name="hours4" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating4" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 5</label>
+                    <input class="hours" name="hours5" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating5" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 6</label>
+                    <input class="hours" name="hours6" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating7" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 7</label>
+                    <input class="hours" name="hours7" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating7" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 8</label>
+                    <input class="hours" name="hours8" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating8" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 9</label>
+                    <input class="hours" name="hours9" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating9" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 10</label>
+                    <input class="hours" name="hours10" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating10" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 11</label>
+                    <input class="hours" name="hours11" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating11" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 12</label>
+                    <input class="hours" name="hours12" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating12" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 13</label>
+                    <input class="hours" name="hours13" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating13" type="number" min="0" max="5" step="0.5">
+                </p>
+                <p class="night-inputs">
+                    <label class="night">Night 14</label>
+                    <input class="hours" name="hours14" type="number" min="0" max="12" step="0.1">
+                    <input class="rating" name="rating14" type="number" min="0" max="5" step="0.5">
+                </p>
+            </form>
+          </div>
+        </div>
+        </body>
+</html>
